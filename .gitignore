@@ -1,0 +1,13 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+.idea
+*.iml
+*.ini
+*~HEAD
+*backup
+*.orig

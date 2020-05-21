@@ -28,5 +28,5 @@ variable "common_tags" {
 variable "account_name" {
   type        = string
   description = "Name of the storage account"
-  default     = "marvelsl"
+  default     = "marvelsa"
 }

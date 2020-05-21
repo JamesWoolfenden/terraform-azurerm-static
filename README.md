@@ -8,11 +8,14 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
-This is an initial module to help create a static site in Azure.
+This is an initial module to help create a static site in Azure, itisnt much than a wrapper as it stands, more settings to follow.
 
 ```terraform
 module "static" {
-
+  source              = "jameswoolfenden/azurerm/static"
+  version             = "v0.0.2"
+  common_tags         = var.common_tags
+  resource_group_name = azurerm_resource_group.marvel.name
 }
 ```
 

@@ -1,6 +1,3 @@
-
-[![Slalom][logo]](https://slalom.com)
-
 # terraform-azurerm-static
 
 [![Build Status](https://github.com/JamesWoolfenden/terraform-azurerm-static/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-azurerm-static)
@@ -24,28 +21,29 @@ You will need to upload your own 404.html and index.html as documented below.
 <https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-how-to?tabs=azure-portal>
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Providers
 
-| Name | Version |
-|------|---------|
-| azurerm | n/a |
+| Name    | Version |
+| ------- | ------- |
+| azurerm | n/a     |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
-| account\_name | Name of the storage account | `string` | `"marvelsl"` | no |
-| account\_replication\_type | (Required) Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS and ZRS | `string` | `"LRS"` | no |
-| account\_tier | (Required) Defines the Tier to use for this storage account. Valid options are Standard and Premium. Changing this forces a new resource to be created | `string` | `"Standard"` | no |
-| common\_tags | A map of tags | `map` | n/a | yes |
-| location | Azure Region to use, defaults to UK South | `string` | `"UK South"` | no |
-| resource\_group\_name | Name of resource group in which to deploy storage account. | `string` | `"marvel"` | no |
+| Name                     | Description                                                                                                                                            | Type     | Default      | Required |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ------------ | :------: |
+| account_name             | Name of the storage account                                                                                                                            | `string` | `"marvelsl"` |    no    |
+| account_replication_type | (Required) Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS and ZRS                                  | `string` | `"LRS"`      |    no    |
+| account_tier             | (Required) Defines the Tier to use for this storage account. Valid options are Standard and Premium. Changing this forces a new resource to be created | `string` | `"Standard"` |    no    |
+| common_tags              | A map of tags                                                                                                                                          | `map`    | n/a          |   yes    |
+| location                 | Azure Region to use, defaults to UK South                                                                                                              | `string` | `"UK South"` |    no    |
+| resource_group_name      | Name of resource group in which to deploy storage account.                                                                                             | `string` | `"marvel"`   |    no    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| website | n/a |
+| Name    | Description |
+| ------- | ----------- |
+| website | n/a         |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
@@ -71,7 +69,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-azur
 
 ## Copyrights
 
-Copyright � 2019-2020 [Slalom, LLC](https://slalom.com)
+Copyright � 2019-2020 James Woolfenden
 
 ## License
 
@@ -80,35 +78,31 @@ Copyright � 2019-2020 [Slalom, LLC](https://slalom.com)
 See [LICENSE](LICENSE) for full details.
 
 Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
+or more contributor license agreements. See the NOTICE file
 distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
+regarding copyright ownership. The ASF licenses this file
 to you under the Apache License, Version 2.0 (the
 "License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
+with the License. You may obtain a copy of the License at
 
 <https://www.apache.org/licenses/LICENSE-2.0>
 
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied.  See the License for the
+KIND, either express or implied. See the License for the
 specific language governing permissions and limitations
 under the License.
 
 ### Contributors
 
-  [![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage]
+[![James Woolfenden][jameswoolfenden_avatar]][jameswoolfenden_homepage]<br/>[James Woolfenden][jameswoolfenden_homepage]
 
-  [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
-  [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-
-[logo]: https://gist.githubusercontent.com/JamesWoolfenden/5c457434351e9fe732ca22b78fdd7d5e/raw/15933294ae2b00f5dba6557d2be88f4b4da21201/slalom-logo.png
-[website]: https://slalom.com
+[jameswoolfenden_homepage]: https://github.com/jameswoolfenden
+[jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
 [github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/company/slalom-consulting/
-[twitter]: https://twitter.com/Slalom
-
+[linkedin]: https://www.linkedin.com/in/jameswoolfenden/
+[twitter]: https://twitter.com/jimwoolfenden
 [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-azurerm-static&url=https://github.com/JamesWoolfenden/terraform-azurerm-static
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-azurerm-static&url=https://github.com/JamesWoolfenden/terraform-azurerm-static
 [share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-azurerm-static

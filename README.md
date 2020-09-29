@@ -21,30 +21,7 @@ You will need to upload your own 404.html and index.html as documented below.
 <https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-how-to?tabs=azure-portal>
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
-## Providers
-
-| Name    | Version |
-| ------- | ------- |
-| azurerm | n/a     |
-
-## Inputs
-
-| Name                     | Description                                                                                                                                            | Type     | Default      | Required |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- | ------------ | :------: |
-| account_name             | Name of the storage account                                                                                                                            | `string` | `"marvelsl"` |    no    |
-| account_replication_type | (Required) Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS and ZRS                                  | `string` | `"LRS"`      |    no    |
-| account_tier             | (Required) Defines the Tier to use for this storage account. Valid options are Standard and Premium. Changing this forces a new resource to be created | `string` | `"Standard"` |    no    |
-| common_tags              | A map of tags                                                                                                                                          | `map`    | n/a          |   yes    |
-| location                 | Azure Region to use, defaults to UK South                                                                                                              | `string` | `"UK South"` |    no    |
-| resource_group_name      | Name of resource group in which to deploy storage account.                                                                                             | `string` | `"marvel"`   |    no    |
-
-## Outputs
-
-| Name    | Description |
-| ------- | ----------- |
-| website | n/a         |
-
+Error: no lines in file
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

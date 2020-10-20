@@ -5,7 +5,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
-This is an initial module to help create a static site in Azure, itisnt much than a wrapper as it stands, more settings to follow.
+This is an initial module to help create a static site in Azure, it isn't much than a wrapper as it stands, more settings to follow.
 
 ```terraform
 module "static" {

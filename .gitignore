@@ -1,13 +1,23 @@
-#  Local .terraform directories
-**/.terraform/*
-
-# .tfstate files
+# Compiled files
 *.tfstate
-*.tfstate.*
+*.tfstate.backup
+*.zip
 
+# Module directory
+.terraform/
+.terraform
+__pycache__/
 .idea
 *.iml
+*.orig
 *.ini
 *~HEAD
 *backup
-*.orig
+*.ini
+tmp
+lambda
+*~HEAD
+*backup
+*.bak
+.terraform.tfstate.lock.info
+.terraform.lock.hcl

@@ -21,7 +21,7 @@ variable "account_replication_type" {
 }
 
 variable "common_tags" {
-  type        = map
+  type        = map(any)
   description = "A map of tags"
 }
 

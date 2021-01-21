@@ -25,8 +25,32 @@ You will need to upload your own 404.html and index.html as documented below.
 <https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-how-to?tabs=azure-portal>
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
 
-Error: no lines in file
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| azurerm | n/a |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| account\_name | Name of the storage account | `string` | `"marvelsa"` | no |
+| account\_replication\_type | (Required) Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS and ZRS | `string` | `"LRS"` | no |
+| account\_tier | (Required) Defines the Tier to use for this storage account. Valid options are Standard and Premium. Changing this forces a new resource to be created | `string` | `"Standard"` | no |
+| common\_tags | A map of tags | `map(any)` | n/a | yes |
+| location | Azure Region to use, defaults to UK South | `string` | `"UK South"` | no |
+| resource\_group\_name | Name of resource group in which to deploy storage account. | `string` | `"marvel"` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| website | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

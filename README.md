@@ -35,6 +35,16 @@ No requirements.
 |------|---------|
 | azurerm | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [azurerm_storage_account](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -51,7 +61,6 @@ No requirements.
 | Name | Description |
 |------|-------------|
 | website | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

@@ -33,34 +33,34 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| azurerm | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [azurerm_storage_account](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account) |
+| Name | Type |
+|------|------|
+| [azurerm_storage_account.website](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| account\_name | Name of the storage account | `string` | `"marvelsa"` | no |
-| account\_replication\_type | (Required) Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS and ZRS | `string` | `"LRS"` | no |
-| account\_tier | (Required) Defines the Tier to use for this storage account. Valid options are Standard and Premium. Changing this forces a new resource to be created | `string` | `"Standard"` | no |
-| common\_tags | A map of tags | `map(any)` | n/a | yes |
-| location | Azure Region to use, defaults to UK South | `string` | `"UK South"` | no |
-| resource\_group\_name | Name of resource group in which to deploy storage account. | `string` | `"marvel"` | no |
+| <a name="input_account_name"></a> [account\_name](#input\_account\_name) | Name of the storage account | `string` | `"marvelsa"` | no |
+| <a name="input_account_replication_type"></a> [account\_replication\_type](#input\_account\_replication\_type) | (Required) Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS and ZRS | `string` | `"LRS"` | no |
+| <a name="input_account_tier"></a> [account\_tier](#input\_account\_tier) | (Required) Defines the Tier to use for this storage account. Valid options are Standard and Premium. Changing this forces a new resource to be created | `string` | `"Standard"` | no |
+| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | A map of tags | `map(any)` | n/a | yes |
+| <a name="input_location"></a> [location](#input\_location) | Azure Region to use, defaults to UK South | `string` | `"UK South"` | no |
+| <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | Name of resource group in which to deploy storage account. | `string` | `"marvel"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| website | n/a |
+| <a name="output_website"></a> [website](#output\_website) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

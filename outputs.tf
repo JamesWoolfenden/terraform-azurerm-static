@@ -1,3 +1,4 @@
 output "website" {
-  value = azurerm_storage_account.website
+  value     = azurerm_storage_account.website
+  sensitive = true
 }

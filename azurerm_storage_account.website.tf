@@ -1,6 +1,9 @@
 resource "azurerm_storage_account" "website" {
-  #checkov:skip=CKV_AZURE_3: "Ensure that 'Secure transfer required' is set to 'Enabled'"
-  #checkov:skip=CKV_AZURE_35: "Ensure default network access rule for Storage Accounts is set to deny"
+  # checkov:skip=CKV2_AZURE_18: ADD REASON
+  # checkov:skip=CKV2_AZURE_8: It's a website
+  # checkov:skip=CKV2_AZURE_1: It's a website
+  # checkov:skip=CKV_AZURE_3: "Ensure that 'Secure transfer required' is set to 'Enabled'"
+  # checkov:skip=CKV_AZURE_35: "Ensure default network access rule for Storage Accounts is set to deny"
 
   name                     = var.account_name
   resource_group_name      = var.resource_group_name

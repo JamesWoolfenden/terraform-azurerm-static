@@ -12,6 +12,15 @@ resource "azurerm_storage_account" "website" {
   account_tier             = var.account_tier
   account_replication_type = var.account_replication_type
   min_tls_version          = "TLS1_2"
+  queue_properties {
+    logging {
+      delete                = true
+      read                  = true
+      write                 = true
+      version               = "1.0"
+      retention_policy_days = 10
+    }
+  }
 
   static_website {
     error_404_document = "404.html"

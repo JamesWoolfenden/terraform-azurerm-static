@@ -63,11 +63,6 @@ No modules.
 | <a name="output_website"></a> [website](#output\_website) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Policy
-
-This is the policy required to build this project:
-
-<!-- BEGINNING OF PRE-COMMIT-PIKE DOCS HOOK -->
 The Terraform resource required is:
 
 ```golang
